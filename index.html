@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="site-body selection:bg-cyber-accent selection:text-black">
+<body id="top" class="site-body selection:bg-cyber-accent selection:text-black">
 
     <header class="header-shell fixed top-0 left-0 right-0 z-50">
         <div class="header-row">
@@ -49,7 +49,7 @@
                     <i class="fa-solid fa-globe"></i>
                     <span id="lang-label-mobile">EN</span>
                 </button>
-                <button id="mobile-menu-btn" class="mobile-toggle">
+                <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Otwórz menu" aria-controls="mobile-menu" aria-expanded="false">
                     <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
@@ -452,6 +452,10 @@
             </div>
         </div>
     </footer>
+
+    <a id="scroll-to-top" href="#top" class="scroll-to-top" aria-label="Przewiń do góry">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <!-- Load Data and Main Script -->
      <script src="js/tailwind.js"></script>
