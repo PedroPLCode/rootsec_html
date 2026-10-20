@@ -316,17 +316,24 @@ body {
 
 .mobile-menu {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 1.5rem 1.5rem 1.5rem;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    height: calc(100vh - 5rem);
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 1.5rem;
+    transform: translateY(-0.75rem);
+    transition: height 0.35s ease, opacity 0.25s ease, transform 0.25s ease, padding 0.25s ease;
 }
 
 .mobile-menu.open {
-    display: flex;
+    height: calc(100vh - 5rem);
+    opacity: 1;
+    padding: 1.5rem;
+    transform: translateY(0);
 }
 
 .hero-wrap {

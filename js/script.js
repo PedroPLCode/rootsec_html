@@ -15,6 +15,7 @@ if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
         const isOpen = mobileMenu.classList.toggle('open');
         mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+        mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Zamknij menu' : 'Otwórz menu');
         syncScrollToTopVisibility();
     });
 }
@@ -26,6 +27,7 @@ mobileLinks.forEach(link => {
         }
         if (mobileMenuBtn) {
             mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.setAttribute('aria-label', 'Otwórz menu');
         }
         syncScrollToTopVisibility();
     });
