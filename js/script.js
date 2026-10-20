@@ -11,27 +11,42 @@ const syncScrollToTopVisibility = () => {
     scrollToTopBtn.classList.toggle('visible', shouldShow);
 };
 
+const closeMobileMenu = () => {
+    if (!mobileMenu || !mobileMenuBtn) return;
+
+    mobileMenu.classList.remove('open');
+    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    mobileMenuBtn.setAttribute('aria-label', 'Otwórz menu');
+    syncScrollToTopVisibility();
+};
+
+const toggleMobileMenu = () => {
+    if (!mobileMenu || !mobileMenuBtn) return;
+
+    const isOpen = mobileMenu.classList.toggle('open');
+    mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+    mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Zamknij menu' : 'Otwórz menu');
+    syncScrollToTopVisibility();
+};
+
 if (mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('open');
-        mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
-        mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Zamknij menu' : 'Otwórz menu');
-        syncScrollToTopVisibility();
-    });
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
 }
 
 mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        if (mobileMenu) {
-            mobileMenu.classList.remove('open');
-        }
-        if (mobileMenuBtn) {
-            mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            mobileMenuBtn.setAttribute('aria-label', 'Otwórz menu');
-        }
-        syncScrollToTopVisibility();
-    });
+    link.addEventListener('click', closeMobileMenu);
 });
+
+const closeMobileMenuOnGesture = () => {
+    if (window.innerWidth >= 768) return;
+    if (mobileMenu && mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+    }
+};
+
+window.addEventListener('scroll', closeMobileMenuOnGesture, { passive: true });
+window.addEventListener('wheel', closeMobileMenuOnGesture, { passive: true });
+window.addEventListener('touchmove', closeMobileMenuOnGesture, { passive: true });
 
 if (scrollToTopBtn) {
     syncScrollToTopVisibility();
