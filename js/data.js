@@ -109,7 +109,7 @@ const translations = {
             desc: "Masz pytania dotyczące podatności, chcesz wycenić testy penetracyjne lub omówić zakres audytu? Napisz do nas bezpośrednio.",
             emailLabel: "E-mail kontaktowy",
             phoneLabel: "Telefon",
-            locationLabel: "Lokalizacja / Działanie",
+            locationLabel: "Lokalizacja",
             locationVal: "Działamy na terenie całego kraju",
             nameLabel: "Imię i Nazwisko *",
             namePlaceholder: "Jan Kowalski",
@@ -245,30 +245,9 @@ const translations = {
             title3: "",
             desc: "Contact us to request a proposal, discuss scope requirements, or get answers to your cybersecurity questions.",
             emailLabel: "Email Contact",
-            phoneLabel: "Direct Hotline",
-            locationLabel: "Global Operations",
-            locationVal: "Operating across the entire country",
-            nameLabel: "Full Name *",
-            namePlaceholder: "Alex Mercer",
-            emailInputLabel: "Business Email *",
-            emailPlaceholder: "alex@company.com",
-            companyLabel: "Company Name",
-            companyPlaceholder: "TechCorp Inc.",
-            serviceLabel: "Target Service",
-            serviceOptions: [
-                "Web Application Penetration Test",
-                "Mobile Application Security Audit",
-                "Cloud Infrastructure Review",
-                "Source Code Review (SAST)",
-                "Social Engineering & Phishing",
-                "General Security Consultation"
-            ],
-            msgLabel: "Project Details / Scope *",
-            msgPlaceholder: "Briefly describe your target assets, timeline, and audit goals...",
-            submitBtn: "Submit Request",
-            successTitle: "Message Transmitted!",
-            successDesc: "Thank you for reaching out. Our security team will analyze your request and get back to you within 24 hours.",
-            successBtn: "Send Another Request"
+            phoneLabel: "Mobile Contact",
+            locationLabel: "Operations",
+            locationVal: "Operating across the entire country"
         },
         footer: {
             rights: "&copy; 2026 ROOTSEC Inc. All rights reserved. | root@rootsec:~$ exit"
