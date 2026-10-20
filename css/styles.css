@@ -380,8 +380,9 @@ body {
 }
 
 .mobile-menu.open {
-    height: min(22rem, calc(100vh - 5rem));
-    max-height: 22rem;
+    height: calc(100vh - 5rem);
+    max-height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
     opacity: 1;
     padding: 1.5rem;
     transform: translateY(0);
@@ -389,7 +390,9 @@ body {
 
 @media (max-width: 767px) {
     .mobile-menu.open {
-        height: min(21rem, calc(100vh - 5rem));
+        height: calc(100vh - 5rem);
+        max-height: calc(100vh - 5rem);
+        min-height: calc(100vh - 5rem);
     }
 }
 
