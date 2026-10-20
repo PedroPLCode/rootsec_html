@@ -5,18 +5,18 @@ const translations = {
             about: "O nas",
             services: "Usługi",
             whyUs: "Dlaczego ROOTSEC",
-            audit: "Zamów Audyt"
+            audit: "Kontakt"
         },
         hero: {
-            badge: "NOWY GRACZ NA RYNKU CYBERBEZPIECZEŃSTWA",
+            badge: "PARTNER W CYBERBEZPIECZEŃSTWIE",
             title1: "Wyprzedź hakerów.",
             title2: "Zabezpiecz swój biznes.",
-            desc: "Jesteśmy dynamicznym zespołem ekspertów ofensywnego bezpieczeństwa. Symulujemy realne cyberataki, aby odkryć słabe punkty Twoich systemów zanim zrobią to cyberprzestępcy.",
-            ctaPrimary: "Rozpocznij Współpracę",
+            desc: "Wspieramy firmy w ocenie i wzmacnianiu bezpieczeństwa aplikacji, infrastruktury oraz procesów operacyjnych. Badamy realne ścieżki ataku, aby zidentyfikować ryzyko zanim wykorzystają je cyberprzestępcy.",
+            ctaPrimary: "Kontakt",
             ctaSecondary: "Poznaj Usługi",
             stat1Val: "100%",
             stat1Desc: "Podejście Ofensywne",
-            stat2Val: "OSCP & CISSP",
+            stat2Val: "CPTS & CSWA",
             stat2Desc: "Certyfikowana Kadra",
             stat3Val: "Zero",
             stat3Desc: "Kompromisów"
@@ -33,11 +33,11 @@ const translations = {
         },
         about: {
             badge: "O NASZYM ZESPOLE",
-            title1: "Młoda ekipa,",
+            title1: "Doświadczeni eksperci,",
             title2: "bezkompromisowe",
             title3: "podejście do bezpieczeństwa.",
-            p1: "ROOTSEC powstał z pasji do bezpieczeństwa ofensywnego i chęci dostarczenia polskiemu i europejskiemu rynku usług audytorskich nowej generacji. Nie polegamy wyłącznie na automatycznych skanerach – drążymy głębiej, łącząc wiedzę ekspercką z realnymi technikami stosowanymi przez współczesnych cyberprzestępców.",
-            p2: "Jesteśmy świeżą marką, ale nasz zespół tworzą certyfikowani specjaliści z wieloletnim doświadczeniem w zabezpieczaniu kluczowych systemów finansowych, e-commerce oraz infrastruktury krytycznej.",
+            p1: "ROOTSEC wspiera firmy w ocenie bezpieczeństwa aplikacji, infrastruktury i procesów operacyjnych. Łączymy praktyczną wiedzę ofensywną z analizą ryzyka, aby skutecznie identyfikować i priorytetyzować obszary wymagające poprawy.",
+            p2: "Nasz zespół to certyfikowani specjaliści z doświadczeniem w audytach, testach penetracyjnych i konsultacjach bezpieczeństwa dla organizacji z sektora finansowego, e-commerce oraz usług cyfrowych.",
             card1Title: "Ofensywny Mindset",
             card1Desc: "Myślimy i działamy jak atakujący, abyś Ty spał spokojnie.",
             card2Title: "Szybkość i Zwinność",
@@ -54,7 +54,7 @@ const translations = {
             badge: "OFERTA ROOTSEC",
             title1: "Kompleksowe Usługi",
             title2: "Bezpieczeństwa",
-            desc: "Zabezpiecz każdy aspekt swojej cyfrowej obecności. Od kodu źródłowego, przez aplikacje webowe i mobilne, aż po świadomość pracowników.",
+            desc: "Zabezpiecz każdy aspekt swojej cyfrowej obecności. Tworzymy rozwiązania w Python i JavaScript, wykonujemy audyty oraz poprawki kodu pod kątem bezpieczeństwa i wspieramy projekty od rozwoju po wdrożenie.",
             enquire: "Zapytaj o usługę",
             items: [
                 {
@@ -73,9 +73,9 @@ const translations = {
                     tag: "Cloud / Infra"
                 },
                 {
-                    title: "Analiza Kodu Źródłowego",
-                    desc: "Przegląd kodu źródłowego (SAST) wsparty analizą ekspercką w celu wykrycia ukrytych luk bezpieczeństwa już na etapie developmentu.",
-                    tag: "SAST / Code Review"
+                    title: "Rozwój i Audyt Bezpieczeństwa Kodu",
+                    desc: "Przegląd kodu źródłowego (SAST), audyty i poprawki bezpieczeństwa w aplikacjach Python i JavaScript oraz wsparcie podczas wdrożeń i refaktoryzacji.",
+                    tag: "Python / JavaScript / SAST"
                 },
                 {
                     title: "Testy Socjotechniczne",
@@ -106,11 +106,11 @@ const translations = {
             title1: "Porozmawiajmy o",
             title2: "bezpieczeństwie",
             title3: "Twojej firmy",
-            desc: "Masz pytania dotyczące podatności, chcesz wycenić testy penetracyjne lub omówić zakres audytu? Napisz do nas bezpośrednio lub wypełnij formularz.",
+            desc: "Masz pytania dotyczące podatności, chcesz wycenić testy penetracyjne lub omówić zakres audytu? Napisz do nas bezpośrednio.",
             emailLabel: "E-mail kontaktowy",
             phoneLabel: "Telefon",
             locationLabel: "Lokalizacja / Działanie",
-            locationVal: "Warszawa, Polska (Usługi Zdalne i Krajowe)",
+            locationVal: "Działamy na terenie całego kraju",
             nameLabel: "Imię i Nazwisko *",
             namePlaceholder: "Jan Kowalski",
             emailInputLabel: "Adres E-mail *",
@@ -143,18 +143,18 @@ const translations = {
             about: "About Us",
             services: "Services",
             whyUs: "Why ROOTSEC",
-            audit: "Request Audit"
+            audit: "Contact"
         },
         hero: {
-            badge: "NEXT-GEN OFFENSIVE SECURITY STARTUP",
+            badge: "OFFENSIVE SECURITY PARTNER",
             title1: "Outsmart Hackers.",
             title2: "Secure Your Digital Assets.",
-            desc: "We simulate real-world cyberattacks to pinpoint vulnerabilities before adversaries exploit them. Modern penetration testing tailored for agile tech companies.",
-            ctaPrimary: "Get Started Today",
+            desc: "We help organizations assess and strengthen the security of applications, infrastructure, and operating processes before real threats can exploit them.",
+            ctaPrimary: "Contact",
             ctaSecondary: "Explore Services",
             stat1Val: "100%",
             stat1Desc: "Offensive Focus",
-            stat2Val: "OSCP & CEH",
+            stat2Val: "CPTS & CSWA",
             stat2Desc: "Certified Experts",
             stat3Val: "Zero",
             stat3Desc: "False Positives"
@@ -170,11 +170,11 @@ const translations = {
         },
         about: {
             badge: "ABOUT ROOTSEC",
-            title1: "Agile, hungry, and",
+            title1: "Experienced experts,",
             title2: "relentless",
             title3: "in securing your code.",
-            p1: "Founded by seasoned cybersecurity specialists, ROOTSEC was born out of a desire to eliminate outdated corporate security audits. We don't just click 'Run' on automated scanners and hand over automated noise.",
-            p2: "We combine deep manual penetration testing with custom automation scripts to dig deeper into business logic flaws, broken access controls, and complex multi-step exploits that automated tools routinely miss.",
+            p1: "ROOTSEC helps organizations assess and strengthen the security of applications, infrastructure, and operational processes. We combine offensive security expertise with risk analysis to identify and prioritize remediation work effectively.",
+            p2: "Our team consists of certified specialists with hands-on experience in audits, penetration testing, and security consulting for financial, e-commerce, and digital services organizations.",
             card1Title: "Attacker Mindset",
             card1Desc: "We think like adversarial hackers so you stay three steps ahead.",
             card2Title: "Speed & Precision",
@@ -191,7 +191,7 @@ const translations = {
             badge: "WHAT WE DO",
             title1: "Comprehensive",
             title2: "Cybersecurity Services",
-            desc: "Protect every layer of your technology stack with tailored offensive security solutions.",
+            desc: "Protect every layer of your technology stack with tailored offensive security solutions, including Python and JavaScript development, code audits, and secure remediation work.",
             enquire: "Enquire",
             items: [
                 {
@@ -210,9 +210,9 @@ const translations = {
                     tag: "AWS / Azure / GCP"
                 },
                 {
-                    title: "Source Code Review (SAST)",
-                    desc: "In-depth inspection of your source code repository to uncover secret leaks, logic vulnerabilities, and unsecure dependency usage.",
-                    tag: "Static Analysis"
+                    title: "Secure Development & Code Review",
+                    desc: "In-depth inspection of Python and JavaScript codebases, secure remediation, and architecture review to uncover secret leaks, logic flaws, and unsafe dependency usage.",
+                    tag: "Python / JavaScript / SAST"
                 },
                 {
                     title: "Social Engineering",
@@ -247,7 +247,7 @@ const translations = {
             emailLabel: "Email Contact",
             phoneLabel: "Direct Hotline",
             locationLabel: "Global Operations",
-            locationVal: "Remote-first & Global Assessments",
+            locationVal: "Operating across the entire country",
             nameLabel: "Full Name *",
             namePlaceholder: "Alex Mercer",
             emailInputLabel: "Business Email *",
